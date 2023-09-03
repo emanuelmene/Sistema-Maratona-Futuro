@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" 
+    rel="stylesheet">
+
+    <title>Login MF</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div id="whatsapp-button">
+            <a href="https://api.whatsapp.com/send?phone=68984258858" target="_blank">
+                <img src="/imagens/Btn-ajuda.png" alt="WhatsApp">
+            </a>
+        </div>
+
+        <!-- IMAGEM -->
+        <div class="image">
+            <img src="./imagens/banner.png" alt="">
+        </div>
+
+        <!-- FORMULÁRIO -->
+
+        <div class="divFormulario">
+
+            <div class="imageBorda">
+                <img src="./imagens/borda.svg" alt="">
+            </div>
+            <div class="form">
+                <div class="tabs">
+                    <button class="tab-button active" onclick="openTab(event, 'professor')">
+                        Professor</button>
+                    <button class="tab-button" onclick="openTab(event, 'aluno')">
+                        Aluno</button>
+                </div>
+                <div id="professor" class="tab-content">
+                    <form>
+                        <div class="divisoes-espacos">
+                            <select id="cidadeProfessor" name="cidade"></select>
+                            <select id="escolaProfessor" name="escola"></select>
+                        </div>
+
+                        <div class="divisoes-inputs">
+                            <input type="text" id="full_name" name="full_name" 
+                            placeholder="Digite seu nome completo..." required>
+    
+                            <input type="text" id="equipe" name="equipe" 
+                            placeholder="Digite o nome da sua equipe" required>
+    
+                            <input type="email" id="email" name="email" 
+                            placeholder="Digite seu melhor e-mail" required>
+                        </div>                        
+                        
+                        <div class="divisoes-espacos">
+                            <div id="campoSenha">
+                                <input id="senha" type="password" name="senha" 
+                                    placeholder="Defina uma senha" required>
+                                <button id="toggle-senha">
+                                    <img src="/imagens/olho-fechado.svg" alt="Mostrar Senha">
+                                </button>
+                            </div>
+                            
+                            <div id="campoSenha">
+                                <input id="confirmar_senha" type="password" name="confirmar_senha" 
+                                    placeholder="Confime a senha" required>
+                                <button id="toggle-ConfirmaSenha">
+                                    <img src="/imagens/olho-fechado.svg" alt="Mostrar Senha">
+                                </button>
+                            </div>
+    
+                        </div>
+
+                        
+                        <div class="divisoes-form-inter">
+                            <button type="submit" class="button-cadastrar">Cadastrar</button>
+                            <button type="submit" class="button-login">Login</button>
+                        </div>
+
+                    </form>
+                </div>
+                <div id="aluno" class="tab-content">
+                    <form>
+                        <div class="divisoes-espacos">
+                            <select id="cidadeAluno" name="cidade"></select>
+                            <select id="escolaAluno" name="escola"></select>
+                        </div>
+
+                        <div class="divisoes-inputs">
+                            <input type="text" id="full_name" name="full_name" 
+                            placeholder="Digite seu nome completo..." required>
+    
+                            <input type="text" id="equipe" name="equipe" 
+                            placeholder="Digite o nome da sua equipe" required>
+    
+                            <input type="email" id="email" name="email" 
+                            placeholder="Digite seu melhor e-mail" required>
+                        </div>                        
+                        
+                        <div class="divisoes-espacos">
+                            <div id="campoSenha">
+                                <input id="senha" type="password" name="senha" 
+                                    placeholder="Defina uma senha" required>
+                                <button id="toggle-senha">
+                                    <img src="/imagens/olho-fechado.svg" alt="Mostrar Senha">
+                                </button>
+                            </div>
+                            
+                            <div id="campoSenha">
+                                <input id="confirmar_senha" type="password" name="confirmar_senha" 
+                                    placeholder="Confime a senha" required>
+                                <button id="toggle-ConfirmaSenha">
+                                    <img src="/imagens/olho-fechado.svg" alt="Mostrar Senha">
+                                </button>
+                            </div>
+                        </div>
+
+                        
+                        <div class="divisoes-form-inter">
+                            <button type="submit" class="button-cadastrar">Cadastrar</button>
+                            <button type="submit" class="button-login">Login</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

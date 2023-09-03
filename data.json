@@ -1,0 +1,15 @@
+{
+    "cidades": [
+      { "value": "cidade0", "label": "Sua Cidade" },   
+      { "value": "cidade1", "label": "Lambari D’Oeste - MT " },
+      { "value": "cidade2", "label": "Nova Lacerda – MT " },
+      { "value": "cidade3", "label": "Guajará – AM" }
+    ],
+    "escolas": [
+      { "value": "escola0", "label": "Sua Escola" },
+      { "value": "escola1", "label": "Escola 1" },
+      { "value": "escola2", "label": "Escola 2" },
+      { "value": "escola3", "label": "Escola 3" }
+    ]
+  }
+  
