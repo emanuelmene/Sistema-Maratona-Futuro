@@ -1,0 +1,20 @@
+/* RESPONSIVO */
+
+@media (max-width: 800px) {
+    
+    .divFormulario{
+        width: 75%;
+    }
+
+    .form {
+        min-width: 10rem;
+        max-width:27rem;
+        min-height: 400px;
+        padding: 0 2rem;
+
+        transition: background-color 0.3s ease;
+    
+    }
+
+
+}
