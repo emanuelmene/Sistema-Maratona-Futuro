@@ -18,3 +18,100 @@
 
 
 }
+
+@media (max-width: 600px) {
+    
+    .divFormulario{
+        width: 100%;
+        height: 50%;
+        bottom: 0;
+        padding-top: 1rem;
+        border-radius: 50px 50px 0 0;
+        overflow: hidden;
+    }
+
+    #whatsapp-button {
+        display: none;
+    }
+
+    .divFormulario.oculto {
+        height: 55%; /* Define a altura inicial de 50% quando oculto */
+        overflow: hidden;
+    }
+    
+    .divFormulario.visivel {
+        height: 80%; /* Define a altura de 80% quando visível */
+        overflow: auto;
+    }
+
+    .barraEscore{
+        display: block;
+        position: fixed;
+        bottom: -3rem;
+        z-index: 900;
+    }
+
+    .btnUp{
+        display: block;
+        position: fixed;
+        bottom: 26rem;
+        z-index: 900;
+    }
+
+    .form {
+        min-width: 10rem;
+        max-width:20rem;
+        min-height: 35rem;
+        margin-top: 15rem;
+        transition: background-color 0.3s ease;
+    }
+
+
+    .image {
+        width: 100%;
+        height: 60%;
+        top: 0;
+    }
+
+    .imageBorda {
+        display: none;
+    }
+
+    .tab-content {
+        display: none;
+        width: 100%;
+        height: auto;
+    }
+
+    #campoSenha{
+        width: 95%;
+        height: auto;
+        margin-bottom: 1rem;
+        padding: 0;
+    }
+
+
+    #cidadeProfessor{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    #escolaProfessor{
+        width: 100%;
+    }
+
+    #cidadeAluno{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    #escolaAluno{
+        width: 100%;
+    }
+
+    .tab-content .divisoes-espacos{
+        flex-direction: column;
+        height: auto;
+    }
+
+}

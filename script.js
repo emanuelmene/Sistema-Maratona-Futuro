@@ -83,3 +83,21 @@ toggleConfirmaSenhaButton.addEventListener('click', () => {
         toggleConfirmaSenhaButton.innerHTML = '<img src="/imagens/olho-fechado.svg" alt="Mostrar Senha">';
     }
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const divFormulario = document.querySelector(".divFormulario");
+    const divForm= document.querySelector(".form");
+    divFormulario.addEventListener("click", function () {
+        if (divFormulario.classList.contains("visivel")) {
+            divFormulario.classList.remove("visivel");
+            divFormulario.classList.add("oculto");
+            divForm.style.marginTop = "15rem"
+        } else {
+            divFormulario.classList.remove("oculto");
+            divForm.style.margin = "0"
+            divFormulario.classList.add("visivel");
+         
+        }
+    });
+});
