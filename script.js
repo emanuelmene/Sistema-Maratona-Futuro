@@ -87,16 +87,23 @@ toggleConfirmaSenhaButton.addEventListener('click', () => {
 
 document.addEventListener("DOMContentLoaded", function () {
     const divFormulario = document.querySelector(".divFormulario");
+    const btnUp = document.querySelector(".btnUp");
     const divForm= document.querySelector(".form");
-    divFormulario.addEventListener("click", function () {
+    const barraEsconde= document.querySelector(".barraEscore");
+    const barraEsconde2= document.querySelector(".barraEscore2");
+    btnUp.addEventListener("click", function () {
         if (divFormulario.classList.contains("visivel")) {
             divFormulario.classList.remove("visivel");
             divFormulario.classList.add("oculto");
-            divForm.style.marginTop = "15rem"
+            divForm.style.marginTop = "15rem";
+            barraEsconde.style.display = "block";
+            barraEsconde2.style.display = "block";
         } else {
             divFormulario.classList.remove("oculto");
-            divForm.style.margin = "0"
+            divForm.style.margin = "0";
             divFormulario.classList.add("visivel");
+            barraEsconde.style.display = "none";
+            barraEsconde2.style.display = "none";
          
         }
     });

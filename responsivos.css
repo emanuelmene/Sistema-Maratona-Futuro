@@ -51,10 +51,17 @@
         z-index: 900;
     }
 
-    .btnUp{
+    .barraEscore2{
         display: block;
         position: fixed;
-        bottom: 26rem;
+        bottom: -4.5rem;
+        z-index: 800;
+    }
+
+    .btnUp{
+        display: flex;
+        position: absolute;
+        top: 0;
         z-index: 900;
     }
 
