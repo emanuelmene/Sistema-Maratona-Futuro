@@ -10,12 +10,19 @@ function openTab(evt, tabName) {
     }
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.classList.add("active");
+
+    // Verifique se a aba ativa é a do aluno
+    if (tabName === "aluno") {
+        document.querySelector(".form").style.backgroundColor = "#05DE6E";
+    } else {
+        // Se não for a aba do aluno, retorne à cor padrão ou a que desejar
+        document.querySelector(".form").style.backgroundColor = "#E600FF";
+    }
 }
 
 // Abra a primeira aba (Professor) por padrão
 document.getElementById("professor").style.display = "block";
 document.getElementById("professor").classList.add("active");
-
 
 
 // Função para buscar e preencher os dados dos selects
