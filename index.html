@@ -85,16 +85,16 @@
                     </form>
                 </div>
                 <div id="aluno" class="tab-content">
-                    <form class="content-form">
+                    <form id="aluno" class="content-form">
 
                         <div class="divisoes-inputs">
-                            <input type="email" id="email" name="email" 
+                            <input type="email" id="emailLogin" name="email" 
                             placeholder="Digite seu e-mail" required>
                         </div>                        
                         
                         <div class="divisoes-espacos">
                             <div id="campoSenha">
-                                <input id="senha" type="password" name="senha" 
+                                <input id="senhaLogin" type="password" name="senha" 
                                     placeholder="Defina uma senha" required>
                                 <button id="toggle-senha">
                                     <img src="/imagens/olho-fechado.svg" alt="Mostrar Senha">
@@ -102,13 +102,14 @@
                             </div>
                             
                         </div>
-
+                    
                         
                         <div class="divisoes-form-inter">
-                            <button onclick="login()" class="button-cadastrar">Login</button>
+                            <button type="submit" class="button-cadastrar">Login</button>
                         </div>
-
+                    
                     </form>
+                    
                 </div>
             </div>
         </div>

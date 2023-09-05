@@ -261,15 +261,27 @@ h1, h2, h3 {
     font-weight: 600;
 }
 
-
+.tab-content a{
+    text-decoration: none;
+    width: auto;
+    height: 2.5rem;
+    border-radius: 30px;
+    border: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+}
 
 .tab-content .button-cadastrar{
     background-color: #E600FF;
     padding: 10px 35px;
     color: #fff;
     font-size: 16px;
+    border-radius: 30px;
     transition: background-color 0.3s ease;
 }
+
+
 
 .tab-content .button-cadastrar:hover{
     background-color: #b900ce;
@@ -403,6 +415,16 @@ h1, h2, h3 {
     flex-grow: 1;
     border: 1px solid #ccc;
 
+}
+
+#senhaLogin{
+    width: 100%;
+    flex-grow: 1;
+    border: none;
+}
+
+#campoSenha input:focus{
+    outline: none;
 }
 
 #toggle-senha {
