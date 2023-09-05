@@ -39,24 +39,20 @@
             <div class="form">
                 <div class="tabs">
                     <button class="tab-button active" onclick="openTab(event, 'professor')">
-                        Professor</button>
+                        Cadastro</button>
                     <button class="tab-button" onclick="openTab(event, 'aluno')">
-                        Aluno</button>
+                        Login</button>
                 </div>
                 <div id="professor" class="tab-content">
                     <form>
                         <div class="divisoes-espacos">
-                            <select id="cidadeProfessor" name="cidade"></select>
                             <select id="escolaProfessor" name="escola"></select>
                         </div>
 
                         <div class="divisoes-inputs">
                             <input type="text" id="full_name" name="full_name" 
                             placeholder="Digite seu nome completo..." required>
-    
-                            <input type="text" id="equipe" name="equipe" 
-                            placeholder="Digite o nome da sua equipe" required>
-    
+
                             <input type="email" id="email" name="email" 
                             placeholder="Digite seu melhor e-mail" required>
                         </div>                        
@@ -90,20 +86,10 @@
                 </div>
                 <div id="aluno" class="tab-content">
                     <form>
-                        <div class="divisoes-espacos">
-                            <select id="cidadeAluno" name="cidade"></select>
-                            <select id="escolaAluno" name="escola"></select>
-                        </div>
 
                         <div class="divisoes-inputs">
-                            <input type="text" id="full_name" name="full_name" 
-                            placeholder="Digite seu nome completo..." required>
-    
-                            <input type="text" id="equipe" name="equipe" 
-                            placeholder="Digite o nome da sua equipe" required>
-    
                             <input type="email" id="email" name="email" 
-                            placeholder="Digite seu melhor e-mail" required>
+                            placeholder="Digite seu e-mail" required>
                         </div>                        
                         
                         <div class="divisoes-espacos">
@@ -115,19 +101,12 @@
                                 </button>
                             </div>
                             
-                            <div id="campoSenha">
-                                <input id="confirmar_senha" type="password" name="confirmar_senha" 
-                                    placeholder="Confime a senha" required>
-                                <button id="toggle-ConfirmaSenha">
-                                    <img src="/imagens/olho-fechado.svg" alt="Mostrar Senha">
-                                </button>
-                            </div>
                         </div>
 
                         
                         <div class="divisoes-form-inter">
-                            <button type="submit" class="button-cadastrar">Cadastrar</button>
-                            <button type="submit" class="button-login">Login</button>
+                            <button type="submit" class="button-cadastrar">Login</button>
+                            <button type="submit" class="button-login">Cadastrar</button>
                         </div>
 
                     </form>
