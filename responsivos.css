@@ -1,4 +1,10 @@
 /* RESPONSIVO */
+@media (max-width: 1920px) {
+    #escolaProfessor{
+        width: 100%;
+    }
+}
+
 
 @media (max-width: 900px) {
     
