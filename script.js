@@ -85,6 +85,20 @@ toggleConfirmaSenhaButton.addEventListener('click', () => {
 });
 
 
+//Funcao oculta senha Login
+const senhaLoginInput = document.getElementById('senhaLogin');
+const toggleSenhaLoginButton = document.getElementById('toggle-senhaLogin');
+
+toggleSenhaLoginButton.addEventListener('click', () => {
+    if (senhaLoginInput.type === 'password') {
+        senhaLoginInput.type = 'text';
+        toggleSenhaLoginButton.innerHTML = '<img src="/imagens/olho-aberto.svg" alt="Ocultar Senha">';
+    } else {
+        senhaLoginInput.type = 'password';
+        toggleSenhaLoginButton.innerHTML = '<img src="/imagens/olho-fechado.svg" alt="Mostrar Senha">';
+    }
+});
+
 document.addEventListener("DOMContentLoaded", function () {
     const divFormulario = document.querySelector(".divFormulario");
     const btnUp = document.querySelector(".btnUp");

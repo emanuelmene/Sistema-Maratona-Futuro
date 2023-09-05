@@ -440,6 +440,19 @@ width: 1.5rem;
 transition: background-color 0.3s ease; 
 }
 
+#toggle-senhaLogin {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+
+#toggle-senhaLogin img{
+width: 1.5rem;
+transition: background-color 0.3s ease; 
+}
+
 #confirmar_senha {
     width: 100%;
     flex-grow: 1;
