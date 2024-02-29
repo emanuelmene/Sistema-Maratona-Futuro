@@ -1,5 +1,7 @@
 # Sistema-Maratona-Futuro
 
+!Capa do projeto "imagens/Captura de tela 2024-02-29 015205.png"
+
 !License: MIT
 
 ## Descrição do Projeto
