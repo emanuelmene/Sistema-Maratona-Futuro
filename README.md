@@ -39,3 +39,4 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 Além disso, é bom ter um editor para trabalhar com o código, como VSCode ou IntelliJ IDEA.
 
 ## Para ver funcionando acesse: https://login-maratonafuturo.netlify.app/
+Para entrar no portal: Login: emanuel@123 e Senha: 123
